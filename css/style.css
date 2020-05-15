@@ -33,7 +33,7 @@ body {
   max-width: 1440px;
   width: 100%;
   margin-left: auto;
-  margin-right: fitauto;
+  margin-right: auto;
 }
 
 .header {
