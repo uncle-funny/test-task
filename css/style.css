@@ -1,0 +1,55 @@
+@import url(../css/normalize.css);
+@font-face {
+  font-family: "Helvetica Now Micro";
+  src: local("../fonts/Helvetica Now Micro Regular"), local("Helvetica-Now-Micro-Regular");
+  src: url("../fonts/HelveticaNowMicro-Regular.woff2") format("woff2");
+  src: url("../fonts/HelveticaNowMicro-Regular.woff") format("woff");
+  src: url("../fonts/HelveticaNowMicro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+/* Basic Settings */
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+header {
+  padding: 5rem 0;
+  background-color: #000;
+}
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (max-width: 575px) {
+  .container {
+    max-width: 90%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
