@@ -5,6 +5,8 @@ html {
 }
 
 body {
+  max-width: 1440px;
+  margin: 0 auto;
   font-size: 1.6rem;
   font-family: "Open Sans", sans-serif;
   line-height: 2.8rem;
@@ -46,7 +48,6 @@ body {
 }
 .header::after {
   background: url(../img/bg.png) no-repeat;
-  background-size: cover;
   width: 50%;
   top: -1px;
   right: -1px;
@@ -179,21 +180,6 @@ body {
   letter-spacing: -0.5px;
 }
 
-@media (min-width: 1441px) {
-  .container-fluid {
-    margin: 0 auto;
-  }
-
-  .header-inner {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-
-  .header::after, .header::before {
-    width: 50%;
-  }
-}
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
