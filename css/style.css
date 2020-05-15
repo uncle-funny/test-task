@@ -1,13 +1,4 @@
 @import url(../css/normalize.css);
-@font-face {
-  font-family: "Helvetica Now Micro";
-  src: local("../fonts/Helvetica Now Micro Regular"), local("Helvetica-Now-Micro-Regular");
-  src: url("../fonts/HelveticaNowMicro-Regular.woff2") format("woff2");
-  src: url("../fonts/HelveticaNowMicro-Regular.woff") format("woff");
-  src: url("../fonts/HelveticaNowMicro-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-}
 /* Basic Settings */
 html {
   font-size: 10px;
@@ -15,6 +6,9 @@ html {
 
 body {
   font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  line-height: 2.8rem;
+  color: #7A7A7A;
 }
 
 .container {
@@ -26,19 +20,160 @@ body {
   margin-left: auto;
 }
 
-header {
-  padding: 5rem 0;
-  background-color: #000;
+.container-fluid {
+  max-width: 1200px;
+  width: 100%;
+  padding-left: 75px;
+  padding-right: 75px;
+}
+
+.header {
+  background: #E3F5F2 url(../img/bg.png) no-repeat right top;
+  padding: 15rem 0;
+}
+.header-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.header-text {
+  max-width: 30rem;
+  margin-right: 14rem;
+}
+.header-text span {
+  text-transform: uppercase;
+  color: #999999;
+  font-size: 1.4rem;
+  line-height: 2rem;
+  font-weight: bold;
+}
+.header-text h2 {
+  padding-bottom: 3rem;
+  font-weight: bold;
+  color: #000;
+  font-size: 3rem;
+  line-height: 3.8rem;
+  letter-spacing: -1.27273px;
+  text-transform: capitalize;
+}
+.header-form {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 8rem 5rem 7rem;
+  border-radius: 1rem;
+}
+.header-form form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.header-form form input, .header-form form button {
+  width: 30rem;
+  border: none;
+}
+.header-form form input {
+  padding: 1.2rem 0 1.2rem 3rem;
+  border-radius: 6px;
+  background-color: #fff;
+  margin-bottom: 2rem;
+}
+.header-form form button {
+  margin-bottom: 2rem;
+  background-color: #0AD9C6;
+  border-radius: 6px;
+  text-align: center;
+  padding: 1.2rem 0;
+  font-weight: bold;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.header-form form button:hover {
+  cursor: pointer;
+  background-color: #3af6e5;
+}
+.header-form-description {
+  width: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.3rem;
+  font-weight: 300;
+}
+.header-form-description p:nth-child(2) {
+  padding-left: 7px;
+}
+
+.main {
+  padding: 6rem 0;
+}
+.main-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.main-inner-bottom {
+  padding-top: 5rem;
+}
+.main-inner-bottom .main-img {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.main-text {
+  max-width: 36rem;
+}
+.main-text h2 {
+  margin-bottom: 3rem;
+  color: #000;
+  font-weight: bold;
+  font-size: 2.2rem;
+  line-height: 34px;
+  letter-spacing: -0.5px;
 }
 
 @media (max-width: 1199px) {
   .container {
     max-width: 960px;
   }
+
+  .main-img {
+    width: 50rem;
+  }
 }
 @media (max-width: 991px) {
   .container {
     max-width: 720px;
+  }
+
+  .main-img {
+    width: 30rem;
   }
 }
 @media (max-width: 767px) {

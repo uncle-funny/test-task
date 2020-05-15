@@ -1,6 +1,5 @@
 
 @import '../css/normalize.css'
-@import 'fonts'
 @import 'variables'
 @import 'mixin'
 
@@ -11,8 +10,11 @@ html
   font-size: 10px
 
 body
-  font-size: $fz
-  
+  font-size: 1.6rem
+  font-family: 'Open Sans', sans-serif  
+  line-height: 2.8rem
+  color: $main-text-color
+
 .container 
   max-width: 1200px
   width: 100%
@@ -21,7 +23,13 @@ body
   margin-right: auto
   margin-left: auto
 
+.container-fluid
+  max-width: 1200px
+  width: 100%
+  padding-left: 75px
+  padding-right: 75px
 
 
 @import 'blocks/header'
+@import 'blocks/main'
 @import 'media'
