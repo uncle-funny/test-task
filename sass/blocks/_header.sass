@@ -1,6 +1,24 @@
 .header
-  background: $bg-color url(../img/bg.png) no-repeat right top 
+  position: relative
   padding: 15rem 0
+  &::after, &::before    
+    content: ""
+    display: block
+    height: 100%
+    position: absolute
+    z-index: -1
+  &::before
+    background-color: $bg-color
+    top: 0
+    left: 0
+    width: 722px
+  &::after
+    background: url(../img/bg.png) no-repeat 
+    background-size: cover
+    width: 50%
+    top: -1px
+    right: -1px
+    z-index: -2
   &-inner
     @include flex(center, flex-start)   
   &-text
