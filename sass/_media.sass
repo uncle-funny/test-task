@@ -43,8 +43,31 @@
 @media ( max-width: 767px )
   .container
     max-width: 540px
-  
+  .container-fluid
+    padding: 0 15px
+  .header
+    &::before
+      width: 82%
+    &-inner
+      flex-wrap: wrap
+      justify-content: center
+    &-text
+      margin-top: 5rem
+      h2
+        font-size: 2.6rem
+    &-form
+      margin-top: 4rem
+  .main
+    &-inner
+      flex-wrap: wrap
+    &-img
+      width: 344px
+      height: 240px  
+    &-text
+      margin-top: 2rem
+
 @media ( max-width: 575px )
   .container
     max-width: 90%
+  
 

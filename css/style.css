@@ -262,6 +262,42 @@ body {
   .container {
     max-width: 540px;
   }
+
+  .container-fluid {
+    padding: 0 15px;
+  }
+
+  .header::before {
+    width: 82%;
+  }
+  .header-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-text {
+    margin-top: 5rem;
+  }
+  .header-text h2 {
+    font-size: 2.6rem;
+  }
+  .header-form {
+    margin-top: 4rem;
+  }
+
+  .main-inner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-img {
+    width: 344px;
+    height: 240px;
+  }
+  .main-text {
+    margin-top: 2rem;
+  }
 }
 @media (max-width: 575px) {
   .container {
