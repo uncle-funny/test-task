@@ -97,7 +97,6 @@ body {
   padding: 7.8rem 0 7.1rem;
   width: 411px;
   height: 465px;
-  text-align: center;
 }
 .header-form form {
   display: -webkit-box;
@@ -141,22 +140,18 @@ body {
   background-color: #3af6e5;
 }
 .header-form-description {
+  padding-left: 1.5rem;
   width: 30rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   font-size: 1.3rem;
   font-weight: 300;
+  line-height: 2.7rem;
+  position: relative;
 }
-.header-form-description p:nth-child(2) {
-  text-align: left;
-  padding-left: 7px;
+.header-form-description::before {
+  content: "*";
+  position: absolute;
+  top: 0;
+  left: 5px;
 }
 
 .main {
@@ -183,6 +178,9 @@ body {
 }
 .main-text {
   max-width: 36rem;
+}
+.main-text span {
+  margin: 0 auto;
 }
 .main-text h2 {
   margin-bottom: 3rem;

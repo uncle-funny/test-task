@@ -52,7 +52,6 @@
     padding: 7.8rem 0 7.1rem  
     width: 411px
     height: 465px
-    text-align: center
     form
       @include flex(center,center)
       flex-direction: column
@@ -78,10 +77,14 @@
           cursor: pointer
           background-color: lighten($button-color, 15%)    
     &-description
+      padding-left: 1.5rem
       width: 30rem
-      @include flex(flex-start,space-between)
       font-size: 1.3rem
       font-weight: 300
-      p:nth-child(2)
-        text-align: left
-        padding-left: 7px
+      line-height: 2.7rem
+      position: relative
+      &::before
+        content: "*"
+        position: absolute
+        top: 0
+        left: 5px
