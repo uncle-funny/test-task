@@ -267,8 +267,14 @@ body {
     padding: 0 15px;
   }
 
+  .header {
+    height: 800px;
+  }
   .header::before {
     width: 82%;
+  }
+  .header::after {
+    background-size: cover;
   }
   .header-inner {
     -webkit-box-orient: vertical;
